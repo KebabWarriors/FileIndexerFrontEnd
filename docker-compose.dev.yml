@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  demetra-frontend-dev:
+    image: node:13.13.0-alpine3.11
+    user: node
+    volumes:
+      - .:/home/node/app
+    command: sh -c "cd /home/node/app && npm install && npm run dev"
+    ports:
+      - 8080:8080

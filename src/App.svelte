@@ -2,29 +2,22 @@
 	export let name;
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    background-color: #3B4252;
+  }
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+  .app-header {
+    background-color: #2E3440;
+    height: 40px;
+    box-shadow: rgba(36, 41, 51, 0.15) 0px 5px 10px 0px;;
+  }
 </style>
+
+<header class="app-header">
+</header>
+
+<main>
+</main>
