@@ -8,11 +8,6 @@
 <style>
   @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 
-  :global(body) {
-    background-color: #3B4252;
-    font-family: 'Roboto', sans-serif;
-  }
-
   main {
     padding-top: 10px;
     margin-top: 60px;
@@ -64,15 +59,13 @@
       </TabBar>
     </div>
   </header>
-  <div>
-    <main>
-      <Route path="/">
-        <h1>Inicio</h1>
-      </Route>
-      <Route path="/index">
-        <h1>Indexear</h1>
-      </Route>
-    </main>
-  </div>
+  <main>
+    <Route path="/">
+      <h1>Inicio</h1>
+    </Route>
+    <Route path="/index">
+      <h1>Indexear</h1>
+    </Route>
+  </main>
 </Router>
 
