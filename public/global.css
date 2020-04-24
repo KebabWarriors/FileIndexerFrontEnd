@@ -1,17 +1,18 @@
 html {
   scroll-padding-top: 60px
-  height: 100%;
 }
 
 html, body {
-  width: 100%;
+  background-color: #3B4252;
   margin: 0;
   padding: 0;
-  background-color: #3B4252;
+  height: 100%;
 }
 
 body {
   @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 

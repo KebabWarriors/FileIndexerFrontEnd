@@ -6,11 +6,8 @@
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
-
   footer {
     left: 0;
-    bottom: 0;
     color: white;
     text-align: center;
     justify-content: center;
@@ -18,15 +15,17 @@
     padding: 5px;
     background-color: #3B4252;
     box-shadow: rgba(36, 41, 51, 0.15) 0px 5px 10px 5px;
+    bottom: 0;
   }
 
   main {
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     margin-top: 60px;
     color: white;
     padding-left: 10%;
     padding-right: 10%;
+    height: 100%;
   }
 
   .github-link {
@@ -86,7 +85,12 @@
     </Route>
   </main>
   <footer>
-    <a class="github-link" href="https://github.com/KebabWarriors" style="none"><h3>Kebab warriors</h3></a>
+    <a
+      class="github-link"
+      href="https://github.com/KebabWarriors" style="none"
+    >
+      <h3>Kebab warriors</h3>
+    </a>
   </footer>
 </Router>
 
