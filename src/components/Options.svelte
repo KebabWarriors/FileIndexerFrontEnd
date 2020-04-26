@@ -1,6 +1,7 @@
 <script>
   import Checkbox from './Checkbox.svelte';
   import PathsBar from './PathsBar.svelte';
+  import { docx, doc, pdf, txt } from '../stores/store.js';
 </script>
 
 <style lang="scss">
@@ -14,8 +15,8 @@
   <small style="font-weight: 100;"><i><b>Separados por comas</b></i></small>
   <br />
   <h3>Tipos de archivos</h3>
-  <Checkbox label=".docx" />
-  <Checkbox label=".doc" />
-  <Checkbox label=".pdf" />
-  <Checkbox label=".txt" />
+  <Checkbox label=".docx" bind:checked={$docx} />
+  <Checkbox label=".doc" bind:checked={$doc}/>
+  <Checkbox label=".pdf" bind:checked={$pdf} />
+  <Checkbox label=".txt" bind:checked={$txt} />
 </div>

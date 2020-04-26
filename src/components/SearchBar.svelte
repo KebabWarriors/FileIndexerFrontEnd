@@ -14,5 +14,5 @@
   <div slot="icon">
     <Icon path={mdiMagnify} color="#5E81AC" />
   </div>
-  <input slot="input" on:keydown={handleKeyDown} placeholder="Buscar" />
+  <input slot="input" on:keydown={handleKeyDown} placeholder="Buscar" bind:value={$searchTerm} />
 </InputBar>
