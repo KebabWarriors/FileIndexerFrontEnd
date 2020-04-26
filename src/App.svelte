@@ -1,10 +1,8 @@
 <script>
   import { Router, Route } from 'svelte-routing';
-  import SearchBar from './components/SearchBar.svelte';
   import Icon from 'mdi-svelte';
   import { mdiGithub } from '@mdi/js';
-  import Card from './components/Card.svelte';
-  import Options from './components/Options.svelte';
+  import Search from './views/Search.svelte';
 
   export let url = '';
 </script>
@@ -37,7 +35,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* creates rows out of the elements main and footer */
+    flex-direction: column;
     height: 100vh;
   }
 
@@ -86,11 +84,7 @@
 <Router url={url}>
   <main>
     <h1 class="title">File indexer</h1>
-    <SearchBar />
-    <br />
-    <Card>
-      <Options />
-    </Card>
+    <Route path="/" component={Search} />
   </main>
   <footer>
     <a
