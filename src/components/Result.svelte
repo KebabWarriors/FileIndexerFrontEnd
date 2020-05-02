@@ -1,5 +1,6 @@
 <script >
   export let title = 'tituo';
+  export let valor = 0.15;
 
 </script>
 <style lang="scss">
@@ -27,5 +28,6 @@
 <div class="result-container">
   <div class="result-title">
     <h3>{title}</h3>
+    <h6>{valor}</h6>
   </div>
 </div>

@@ -7,3 +7,5 @@ export const doc = writable(true);
 export const pdf = writable(true);
 export const txt = writable(true);
 export const paths = writable('');
+export const data = writable({});
+
