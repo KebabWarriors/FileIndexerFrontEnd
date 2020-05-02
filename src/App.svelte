@@ -53,6 +53,7 @@
     display: flex;
     padding: 5px;
     bottom: 0;
+    user-select: none;
   }
 
   main {
@@ -78,6 +79,7 @@
 
   .title {
     font-size: 40px;
+    user-select: none;
   }
 </style>
 

@@ -1,5 +1,6 @@
 <script>
   export let label = '';
+  export let checked = false;
 </script>
 
 <style lang="scss">
@@ -60,6 +61,6 @@
 
 <label class="checkbox-container">
   {label}
-  <input type="checkbox" />
+  <input type="checkbox" checked="{checked}" />
   <span class="checkbox-checkmark" />
 </label>
